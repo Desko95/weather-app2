@@ -50,7 +50,7 @@ function App() {
           {weatherData && (
             <>
               <div className="temperature">
-                <h1>{`${Math.round(weatherData.main.temp - 273.15)}°C`}</h1>
+                <h2>{`${Math.round(weatherData.main.temp - 273.15)}°C`}</h2>
               </div>
               <div className="description">
                 <p>{weatherData.weather[0].main}</p>

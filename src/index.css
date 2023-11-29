@@ -15,11 +15,34 @@ body {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
+  color: #2e78cc; /* A vibrant green color */
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Pacifico', cursive; /* A decorative and stylish font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  background: linear-gradient(45deg, #e1ffed, #71c6ff); /* Gradient background */
+  -webkit-background-clip: text; /* Clip text to the background gradient */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+  animation: glowing 10s linear infinite; /* Example of animation */
+}
+
+@keyframes glowing {
+  0% { text-shadow: 0 0 10px #2ecc71; }
+  50% { text-shadow: 0 0 20px #2ecc71; }
+  100% { text-shadow: 0 0 10px #2ecc71; }
+}
+
+h2 {
+  font-size: 4rem;
+  color: s#ffffff; /* A vibrant blue color */
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app {
@@ -97,3 +120,4 @@ h1 {
 .bold {
   font-weight: 700;
 }
+
