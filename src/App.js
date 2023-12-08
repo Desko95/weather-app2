@@ -6,7 +6,7 @@ function App() {
   const [location, setLocation] = useState("");
   const [searchInput, setSearchInput] = useState("");
 
-  const API_KEY = "0c06be41077041e9ba7f4dfd01e38c82"; // Replace with your OpenWeatherMap API key
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&appid=${API_KEY}`;
 
   const handleSearchChange = (event) => {
